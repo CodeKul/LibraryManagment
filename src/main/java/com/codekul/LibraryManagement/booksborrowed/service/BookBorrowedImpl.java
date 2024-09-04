@@ -32,7 +32,7 @@ public class BookBorrowedImpl implements BookBorrowedService {
 
     @Override
     public String returnBook(Long borrowedId) {
-
-
+        booksBorrowedRepo.returnBook(borrowedId);
+        return "books return successfully";
     }
 }
