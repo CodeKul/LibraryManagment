@@ -1,8 +1,8 @@
-package com.codekul.LibraryManagement.booksborrowed;
+package com.codekul.LibraryManagement.booksborrowed.entity;
 
 import com.codekul.LibraryManagement.BaseEntity;
 import com.codekul.LibraryManagement.book.entity.Books;
-import com.codekul.LibraryManagement.studentregistration.StudentRegistration;
+import com.codekul.LibraryManagement.studentregistration.entity.StudentRegistration;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -26,7 +26,7 @@ public class BooksBorrowed extends BaseEntity {
     @JoinColumn(name = "book_id")
     private Books books;
 
-    private LocalDate borrowedDate;
+    private LocalDate borrowedDate = LocalDate.now();
 
     private LocalDate returnDate;
 

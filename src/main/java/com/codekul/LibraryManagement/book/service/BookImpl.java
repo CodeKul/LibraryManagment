@@ -17,7 +17,7 @@ public class BookImpl implements BookService {
         book.setAuthor(books.getAuthor());
         book.setName(books.getName());
         book.setDescription(books.getDescription());
-        book.setIaAvailable(true);
+        book.setIsAvailable(true);
         book.setIsbn(books.getIsbn());
         bookRepository.save(book);
         return "book saved";

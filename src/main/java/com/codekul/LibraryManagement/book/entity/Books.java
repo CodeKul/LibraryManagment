@@ -25,5 +25,5 @@ public class Books extends BaseEntity {
 
     private String isbn;
 
-    private Boolean iaAvailable =false;
+    private Boolean isAvailable =true;
 }

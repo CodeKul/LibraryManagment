@@ -2,7 +2,7 @@ package com.codekul.LibraryManagement.fines;
 
 import com.codekul.LibraryManagement.BaseEntity;
 import com.codekul.LibraryManagement.book.entity.Books;
-import com.codekul.LibraryManagement.studentregistration.StudentRegistration;
+import com.codekul.LibraryManagement.studentregistration.entity.StudentRegistration;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
